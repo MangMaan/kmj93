@@ -42,6 +42,8 @@ $(document).ready(function () {
             $(this).children('img').css('opacity','1');
             $(this).children('dl').hide();
         })
+
+        $('.poster').colorbox({closeButton:true,overlayClose:true,iframe:true,width:'80%',height:'100%'});
         
     } else {
 

@@ -200,7 +200,7 @@
 #graphic .detail_wrap li dl{text-align: center; width: 100%; height:100%; position: absolute; top: 0; left: 0; z-index: 999;overflow: hidden; font-family: 'Noto Sans KR'; letter-spacing:3px;}
 #graphic .detail_wrap li dl dt{margin: 3.6041vw auto 0 auto;color:#fff; font-weight: 600; font-size: 1.25rem; border-bottom: 2px solid #fff; display: block;; width: 80%;padding-bottom: 10px;}
 #graphic .detail_wrap li dl dd{margin-top: 10px; font-weight: 600; font-size: 0.7rem; color: #fff; width: 100%;}
-#graphic .detail_wrap li dl dd a{color: #fff;display: block; width: 100%; margin-top:5%;}
+#graphic .detail_wrap li dl dd a{color: #fff;display: block; width: 100%; margin-top: 2.604vw;}
 #cboxClose{position: absolute; top: 2%; right: 2%; font-size: 0; background: url(../icon/closeW.png) no-repeat center center; width: 30px; height: 30px;}
 #graphic .detail_wrap li img{width: 100%;}
 #graphic .mobilebr{display: block;}
