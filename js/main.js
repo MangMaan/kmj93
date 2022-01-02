@@ -24,6 +24,17 @@ $(document).ready(function () {
                 $('.appdetail').hide();
             })
         })
+
+        $('.detail_wrap li dl').hide();
+        $('.appdetail').hide();
+        $('.detail_wrap li').mouseover(function(){
+            $(this).children('img').css('opacity','0.2')
+            $(this).children('dl').show();
+        })/* end */
+        $('.detail_wrap li').mouseleave(function(){
+            $(this).children('img').css('opacity','1');
+            $(this).children('dl').hide();
+        })
     } else {
 
     }

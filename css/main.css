@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 #pc_wrap{background: #000;font-family: 'Work Sans', sans-serif;}
+#pc_wrap .mobilebr{display: none;}
 #header .gnb{width:20vw;
         z-index:10;
         display: flex;
@@ -84,11 +85,9 @@
         .resume{padding: 7.8125vw 0; width: 100%;position: relative; background:url(../banner/resumebg.jpg) no-repeat center center;} /* padding 150px 0 */
         .resume h1{font-size: 1rem; font-weight: 600; padding-bottom: 50px; opacity: 0.7; position: absolute;top: 12%; left: 5%; display: none;} 
         .resume img{width: 1200px; display: block; box-shadow: 1px 1px 15px #000; margin: 0 auto;z-index: 11;}
-        .resume .onname {position: absolute; bottom: 4%; left: 0%;}
-        .resume .onname li{float: left; padding: 0 15px; font-size: 1rem; font-weight: 400;}
-        .resume .onname li:first-child{position: relative;}
-        .resume .onname li:first-child::after{content: ''; width: 30.0416vw; height: 3px; background: #fff; position: absolute; bottom:-20%; left: 17%;}
-        .resume .onname li:first-child a{color: #fff;} 
+        .resume .onname {position: absolute; bottom: 4%; left: 0%;  display: none;}
+        .resume .onname li:first-child::after{ display: none; content: ''; width: 26.0416vw; height: 3px; background: #fff; position: absolute; bottom:-15%; left: 17%;}
+        .resume .onname li:first-child a{color: #fff;}
 }
 
 #slide{padding: 7.8125vw 2.604166vw; position: relative;}/* padding 150px  50px */
@@ -133,9 +132,9 @@
 #slide .slide_wrap .slick-prev{position: absolute; top: 45%; z-index: 99; left: 2%; border: 0; font-size: 0; width: 50px; height: 50px; background: url(../icon/prev.png) no-repeat center center;}
 #slide .slide_wrap .slick-next{position: absolute; top: 45%; z-index: 99; right: 2%; border: 0; font-size: 0; width: 50px; height: 50px; background: url(../icon/next.png) no-repeat center center;}
 #slide #web{font-size: 2rem; font-weight: 600; padding-bottom: 50px; opacity: 0.7; position: absolute;top: 3%; left: 5%;} 
-#slide .onname {position: absolute; bottom: 4%; left: 0%;}
-#slide .onname li{float: left; padding: 0 15px; font-size: 1rem; font-weight: 400;}
-#slide .onname li:first-child{position: relative;}
+#slide .onname {position: absolute; bottom: 4%; left: 0%; display: none;}
+#slide .onname li{float: left; padding: 0 15px; font-size: 1rem; font-weight: 400; display: none;}
+#slide .onname li:first-child{position: relative; display: none;}
 #slide .onname li:first-child::after{content: ''; width: 30.0416vw; height: 3px; background: #fff; position: absolute; bottom:-20%; left: 17%;}
 }
 
@@ -161,18 +160,18 @@
 
 @media all and (min-width: 768px) and (max-width:1280px){
 #appDesign {position: relative; padding: 7.8125vw 0;}
-#appDesign h1{font-size: 1rem; font-weight: 600; padding-bottom: 50px; opacity: 0.7; position: absolute;top: 12%; left: 5%; z-index: 999;} 
+#appDesign h1{font-size: 2rem; font-weight: 600; padding-bottom: 50px; opacity: 0.7; position: absolute;top: 10%; left: 5%; z-index: 999;} 
 #appDesign .app_wrap{display: flex; justify-content: space-between; height: 100vh}
 #appDesign .app_wrap img{width: 100%;height: 100vh;}
 #appDesign .appdetail{position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #fff; background:rgba(0,0,0,0.8); text-align: center;}
 #appDesign #intro{position: absolute; top: 45%; left: 50%; transform: translateX(-50%); width: 100%;}
 #appDesign #intro dt{font-size: 1.5rem; padding-bottom: 1.5625vw;}
 #appDesign #intro dd{font-size: 1rem; line-height: 2;}
-#appDesign .click_wrap{justify-content: space-between;position: absolute; top: 12%; left:15%; z-index: 999;}
+#appDesign .click_wrap{justify-content: space-between;position: absolute; top: 12%; left:25%; z-index: 999;}
 #appDesign .click_wrap li {float: left; padding: 0 1.04166vw;}
 #appDesign .click_wrap li a{color: #fff; font-size: 1rem; font-weight: 600;}
 #appDesign .click_wrap li a:hover{color: orangered;} 
-#appDesign .onname {position: absolute; bottom: 4%; left: 0%;}
+#appDesign .onname {position: absolute; bottom: 4%; left: 0%;  display: none;}
 #appDesign .onname li{float: left; padding: 0 15px; font-size: 1rem; font-weight: 400;}
 #appDesign .onname li:first-child{position: relative;}
 #appDesign .onname li:first-child::after{content: ''; width: 30.0416vw; height: 3px; background: #fff; position: absolute; bottom:-20%; left: 17%;}
@@ -193,5 +192,16 @@
 #graphic .detail_wrap li img{width: 100%;}
 
 @media all and (min-width: 768px) and (max-width: 1280px){
-        
+#graphic{padding-top: 7.8125vw; position: relative; width: 100%; height: 100%;}
+#graphic h1{font-size: 2rem; font-weight: 600; padding-bottom: 2.60416vw; opacity: 0.7; position: absolute;top: 12%; left: 5%;} /* margin bottom 50px */
+#graphic .detail_wrap{display: flex; justify-content: space-between; width: 87.8125vw;margin: 0 auto; height: 100%; position: relative;} 
+#graphic #detail1{margin-top: 5.2083vw;}/* margin-top 100px */
+#graphic .detail_wrap li{width: 15.625vw; height: 18.75vw; background: #000; margin-bottom: 3.125vw; position: relative;}/* margin-bottom 60px */
+#graphic .detail_wrap li dl{text-align: center; width: 100%; height:100%; position: absolute; top: 0; left: 0; z-index: 999;overflow: hidden; font-family: 'Noto Sans KR'; letter-spacing:3px;}
+#graphic .detail_wrap li dl dt{margin: 3.6041vw auto 0 auto;color:#fff; font-weight: 600; font-size: 1.25rem; border-bottom: 2px solid #fff; display: block;; width: 80%;padding-bottom: 10px;}
+#graphic .detail_wrap li dl dd{margin-top: 10px; font-weight: 600; font-size: 0.7rem; color: #fff; width: 100%;}
+#graphic .detail_wrap li dl dd a{color: #fff;display: block; width: 100%; margin-top:5%;}
+#cboxClose{position: absolute; top: 2%; right: 2%; font-size: 0; background: url(../icon/closeW.png) no-repeat center center; width: 30px; height: 30px;}
+#graphic .detail_wrap li img{width: 100%;}
+#graphic .mobilebr{display: block;}
 }
