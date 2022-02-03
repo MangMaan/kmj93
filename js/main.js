@@ -92,7 +92,7 @@ $(document).ready(function () {
     $('.app_wrap').slick({
         autoplay:true,
         dots:false,
-        arrows:false,
+        arrows:true,
         slidesToShow:4,
         slidesToScroll:1,
         infinite:true
